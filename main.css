@@ -1,8 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
 :root{
-    --mainText: 'Roboto', sans-serif;
+    --mainFont: 'Roboto', sans-serif, Helvetica, Arial;
 
 
 }
 
+html{
+    font-family: var(--mainFont);
+}
+
+*{
+    font-family: var(--mainFont);
+}
+
+a{
+    text-decoration: none;
+}
