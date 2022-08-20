@@ -2,7 +2,7 @@
 
 :root{
     --mainFont: 'Roboto', sans-serif, Helvetica, Arial;
-
+    --mainFontColor: #202124;
 
 }
 
@@ -16,19 +16,201 @@ html{
 
 a{
     text-decoration: none;
+    cursor: pointer;
+    color: var(--mainFontColor);
+}
+
+body, input, button {
+    font-size: 14px;
+    font-family: var(--mainFont);
+    color: var(--mainFontColor);
+}
+
+div{
+    display: block;
+
 }
 
 .main-container{
     display: flex;
     flex-direction: column;
     height: 100%;
+    align-items: center;
+    padding: 6px;
+
 }
 
-header{
+.top-nav{
     display:flex;
     align-items: center;
     padding: 6px;
     height: 60px;
     flex-shrink: 0;
     box-sizing: border-box;
+}
+
+a.top-left{
+    display: inline-block;
+    padding: 5px;
+    margin: 0 5px;
+    color: var(--mainFontColor);
+}
+
+a.top-left:first-of-type{
+    margin-left: 15px;
+}
+
+.top-right-container-wrapper{
+    display: inline-block;
+    flex-grow:1;
+    font-size: 14px;
+    font-family: var(--mainFont);
+}
+
+.top-right-container{
+    min-width: auto;
+    font-size: 13px;
+    line-height: 27px;
+    font-family: var(--mainFont);
+    height: 48px;
+    color: black;
+    z-index: 986;
+    position: relative;
+    transition: box-shadow 250ms;
+    display: block;
+}
+
+.top-right{
+    padding-left: 0;
+    float: right;
+    box-sizing: border-box;
+    height: 48px;
+    padding: 0 4px;
+    flex: 0 0 auto;
+    justify-content: flex-end;
+    vertical-align: middle;
+    white-space: nowrap;
+    -webkit-box-align: center;
+    align-items: center;
+    font-size: 13px;
+    line-height: 27px;
+    font-family: var(--mainFont);
+    color: black;
+}
+
+.top-right-left-links-wrapper{
+    white-space: nowrap;
+    font-size: 13px;
+    line-height: 27px;
+    font-family: var(--mainFont);
+    color: black;
+}
+
+.top-right-left-links{
+    font-size: 13px;
+    line-height: 27px;
+    font-family: var(--mainFont);
+    color: black;
+    padding-right: 15px;
+    white-space: nowrap;
+
+}
+
+.top-right-gmail{
+    display: inline-block;
+    padding-left: 15px;
+    font-size: 13px;
+    line-height: 27px;
+    font-family: var(--mainFont);
+    color: black;
+    white-space: nowrap;
+}
+
+.top-right-gmail a{
+    display: inline-block;
+    vertical-align: middle;
+    color: rgba(0,0,0,.87);
+    font-size: 13px;
+    line-height: 27px;
+    font-family: var(--mainFont);
+    color: black;
+    white-space: nowrap;
+}
+
+
+.top-right-images{
+    display: inline-block;
+    padding-left: 15px;
+    font-size: 13px;
+    line-height: 27px;
+    font-family: var(--mainFont);
+    color: black;
+    white-space: nowrap;
+}
+
+.top-right-images a{
+    display: inline-block;
+    vertical-align: middle;
+    color: rgba(0,0,0,.87);
+    font-size: 13px;
+    line-height: 27px;
+    font-family: var(--mainFont);
+    color: black;
+    white-space: nowrap;
+}
+
+.top-right-right-links{
+    float: right;
+    position: relative;
+    white-space: nowrap;
+    font-size: 13px;
+    line-height: 27px;
+    font-family: var(--mainFont);
+    color: black;
+}
+
+.top-right-grid{
+    padding: 4px;
+    display: inline-block;
+    vertical-align: middle;
+    white-space: nowrap;
+    font-size: 13px;
+    line-height: 27px;
+    font-family: var(--mainFont);
+    color: black;
+}
+
+.grid{
+    white-space: nowrap;
+    font-size: 13px;
+    line-height: 27px;
+    font-family: var(--mainFont);
+    color: #5f6368;
+    opacity: 1;
+    height: 24px;
+    width: 24px;
+}
+
+.sign-in{
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    padding: 9px 15px;
+    min-width: 80px;
+    margin-left: 8px;
+    background: #1a73e8;
+    border: 1px solid transparent;
+    font-family: var(--mainFont);
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: .25px;
+    line-height: 16px;
+    margin-right: 8px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+    display: inline-block;
+    white-space: nowrap;
 }
