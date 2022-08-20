@@ -78,13 +78,29 @@
 }
 
 .main-search-bar:hover{
-    box-shadow: rgba(32,33,36,.03) 0px 2px 6px 0px;
+    box-shadow: rgba(32,33,36,.3) 0px 2px 6px 0px;
 }
 
 .main-search-bar-magnify{
+    font-size: 1.3rem;
+    color: rgba(32,33,36,.3);
+    margin-left: .8rem;
+}
+
+.main-search-bar-input{
+    border: none;
+    margin-top: 0.3rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+    width: 85%;
+    height: 75%;
     font-size: 1.5rem;
 }
 
+.main-search-bar-input:focus-visible{
+    outline: none;
+}
 .main-search-bar-microphone{
     height: 1.7rem;
+    margin-top: .3rem;
 }
